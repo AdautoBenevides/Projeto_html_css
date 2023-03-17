@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<script src="javascript/funcoes.js"></script>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>One Piece</h1>
+                <h2> <i> O melhor anime de todos os tempos </i> </h2>
+            </hgroup>
+
+            <img id="icone_fale_conosco" src="imagens/fale_conosco.png">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('imagens/icone_home.png')"
+                        onmouseout="mudaFoto('imagens/fale_conosco.png')"><a href="index.html"> home</a></li>
+                    <li onmouseover="mudaFoto('imagens/icone_especicacoes.png')"
+                        onmouseout="mudaFoto('imagens/fale_conosco.png')"><a href="specs.html"> Especificações</a></li>
+                    <li onmouseover="mudaFoto('imagens/icone_home.png')"
+                        onmouseout="mudaFoto('imagens/fale_conosco.png')"><a href="fotos.html"> Fotos</a></li>
+                    <li> <a href="multimidia.html"> Multimídia</a></li>
+                    <li> <a href="fale_conosco.html"> Fale conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpo_full">
+            <article id="noticia_principal">
+                <header id="cabecalho_artigo">
+                    <hgroup>
+                        <h3>One Piece > Fale Conosco</h3>
+                        <h1>Galeria de imagens de One Piece</h1>
+                        <h2>Por Adauto Benevides</h2>
+                        <h3 class="direita">Atualizado em 26/12/2022</h3>
+                    </hgroup>
+                </header>
+
+                <form method="post" id="fContato" action="mailto:daucouto9@gmail.com">
+                    <fieldset id="usuario">
+                        <legend> Identificação do Usuário</legend>
+                        <p> <label for="cNome"> Nome: </label><input type="text" name="tNome" id="cNome" size="15"
+                                maxlength="30" placeholder="Nome Completo"> </p>
+                        <p> <label for="cSenha"> Senha: </label><input type="password" name="tSenha" id="cSenha"
+                                size="8" maxlength="8" placeholder="8 dígitos"> </p>
+                        <p><label for="cMail"> e-mail: </label><input type="email" name="tMail" id="cMail" size="20"
+                                maxlength="40" placeholder="E-mail"></p>
+                        <fieldset id="sexo">
+                            <legend> Sexo:</legend>
+                            <input type="radio" name="tSexo" id="cMasc"> <label for="cMasc"> masculino</label> <br>
+                            <input type="radio" name="tSexo" id="cFem"> <label for="cFem">feminino</label>
+                        </fieldset>
+                        <p><label for="cNasc"> Data de Nascimento: </label><input type="date" name="tNasc" id="cNasc">
+                        </p>
+                    </fieldset>
+
+                    <fieldset id="endereco">
+                        <legend> Endereço do Usuário </legend>
+                        <p><label for="cRua"> Logradouro: </label><input type="text" name="tRua" id="cRua" size="13"
+                                maxlength="80" placeholder="Rua, Av, Trav, ..."></p>
+                        <p><label for="cNum"> Número: </label><input type="number" name="tNum" id="cNum" min="0"
+                                max="9999"></p>
+                        <p><label for="cEst">Estado:</label>
+                            <select name="tEst" id="cEst">
+                                <optgroup label="Região Sudeste">
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="BA">Minas Gerais</option>
+                                </optgroup>
+                                <optgroup label="Região Nordeste">
+                                    <option value="SE">Bahia</option>
+                                    <option value="AC">Sergipe</option>
+                                    <option value="RS">Maranhão</option>
+                                </optgroup>
+
+                            </select>
+                        </p>
+                        <p><label for="cCid">Cidade:</label><input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"></p>
+                        <datalist id="cidades">
+                            <option value="Guanambi"></option>
+                            <option value="Vitoria da Conquista"></option> 
+                            <option value="Brumado"></option>
+                            <option value="Ilhéus"></option>
+                            <option value="Salvador"></option>   
+                        </datalist>
+                        
+
+                    </fieldset>
+                    <fieldset id="mensagem">
+                        <legend> Mensagem do Usuário</legend>
+                        <p><label for="cUrg">Grau de Urgência:</label>
+                        Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">
+                        Máx</p>
+                        <p><label for="cMsg">Mensagem:</label></p>
+                        <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+                    </fieldset>
+                    <input class="botao" type="image" name="tEnviar" src="imagens/botao_enviar.png">
+                </form>
+
+            </article>
+        </section>
+        <footer id="rodape">
+            <p>Copyright &copy; 2022 - by Adauto Benevides <br>
+                <a href="http://facebook.com/" target="_blank"> Facebook </a> |
+                <a href="" target="_blank"> Instagram </a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

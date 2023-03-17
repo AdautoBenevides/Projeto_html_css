@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fotos</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/fotos.css">
+</head>
+<script src="javascript/funcoes.js"></script>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>One Piece</h1>
+                <h2> <i> O melhor anime de todos os tempos </i> </h2>
+            </hgroup>
+
+            <img id="icone_fotos" src="imagens/fotos.png">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('imagens/icone_home.png')" onmouseout="mudaFoto('imagens/luffyzinho.png')"><a href="index.html"> home</a></li>
+                    <li onmouseover="mudaFoto('imagens/fotos.png')"
+                        onmouseout="mudaFoto('imagens/fotos.png')"><a href="specs.html"> Especificações</a></li>
+                    <li onmouseover="mudaFoto('imagens/icone_home.png')"
+                        onmouseout="mudaFoto('imagens/fotos.png')"><a href="fotos.html"> Fotos</a></li>
+                    <li onmouseover="mudafoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/fotos.png')"> <a href="multimidia.html"> Multimídia</a></li>
+                    <li onmouseover="mudaFoto('imagens/fale_conosco.png')" onmouseout="mudaFoto('imagens/fotos.png')"> <a href="fale_conosco.html"> Fale conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpo_full">
+            <article id="noticia_principal">
+                <header id="cabecalho_artigo">
+                    <hgroup>
+                        <h3>One Piece > Fotos</h3>
+                        <h1>Galeria de imagens de One Piece</h1>
+                        <h2>Por Adauto Benevides</h2>
+                        <h3 class="direita">Atualizado em 25/12/2022</h3>
+                    </hgroup>
+                </header>
+                <p>Veja na galeria de fotos de One Piece personagens e artes da obra. Basta passar o mouse sobre uma das fotos e tera uma breve descrição</p>
+                <ul id="album_fotos">
+                    <li id="foto01"><span>Piratas</span></li>
+                    <li id="foto02"><span>Imperadores</span></li>
+                    <li id="foto03"><span>Sete Lordes do Mar</span></li>
+                    <li id="foto04"><span>Marinha</span></li>
+                </ul>
+            </article>
+        </section>
+        <footer id="rodape">
+            <p>Copyright &copy; 2022 - by Adauto Benevides <br>
+                <a href="http://facebook.com/" target="_blank"> Facebook </a> |
+                <a href="" target="_blank"> Instagram </a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
